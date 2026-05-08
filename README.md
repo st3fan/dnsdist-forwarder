@@ -32,10 +32,9 @@ docker run -d --name dnsdist-forwarder \
 
 ## Upstream resolvers
 
-Same six addresses on both transports, with TLS certificate validation:
+Same four addresses on both transports, with TLS certificate validation:
 
 - Google: `8.8.8.8`, `8.8.4.4` (`dns.google`)
 - Cloudflare: `1.1.1.1`, `1.0.0.1` (`cloudflare-dns.com`)
-- Quad9: `9.9.9.10`, `149.112.112.10` (`dns10.quad9.net`)
 
 DoT uses port 853; DoH uses port 443 with the `/dns-query` endpoint.
