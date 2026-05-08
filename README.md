@@ -25,9 +25,9 @@ docker build -t dnsdist-forwarder .
 ## Run
 
 ```sh
-docker run -d --name dnsdist-forwarder \
+docker run --rm -d --name dnsdist-forwarder \
     -p 53:53/udp -p 53:53/tcp \
-    ghcr.io/st3fan/dnsdist-forwarder:develop
+    ghcr.io/st3fan/dnsdist-forwarder:latest
 ```
 
 ## Upstream resolvers
